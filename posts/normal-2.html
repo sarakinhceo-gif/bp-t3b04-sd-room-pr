@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>인프라 테크 지식 저널 및 아카이브</title>
+  <title>리눅스 클라우드 VPS(가상 서버) systemd-journald 메모리 힙 누수 및 로그 디스크 포화 제어 기법</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Noto+Sans+KR:wght@400;900&display=swap" rel="stylesheet">
@@ -140,56 +140,21 @@
   <div class="wrapper">
     <header>
       <a href="/" class="brand">STREET.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
+      <nav><a href="../index.html">HOME</a> | <a href="../sitemap.xml">SITEMAP</a></nav>
     </header>
     <main>
       <div class="label">// BRUTALIST GRID SYSTEM</div>
-      <h1>인프라 테크 지식 저널 및 아카이브</h1>
+      <h1>리눅스 클라우드 VPS(가상 서버) systemd-journald 메모리 힙 누수 및 로그 디스크 포화 제어 기법</h1>
       <div class="article-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>인프라 테크</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
+        한정된 자원으로 초경량 고성능 웹 서버를 운영할 때, 실시간 커널 로그가 무제한 적재되어 디스크 공간 부족으로 전체 프로세스가 락되는 파멸적 재앙을 미연에 방지하기 위해 `/etc/systemd/journald.conf` 설정 파일 내 최대 보존 한계량(SystemMaxUse=100M)을 엄격하게 걸어주는 인프라 최적화 튜닝 기법은 매우 효율적인 핵심 관리 요령입니다.<br><br>데몬 프로세스의 백그라운드 관리와 전원 상태별 로그 스케일링 설정에 관한 표준 정보는 <a href="https://ko.wikipedia.org/wiki/Systemd" target="_blank" style="color: #64748b; text-decoration: underline;">위키백과: systemd 서비스 매니저 제어</a>에서 풍부한 개발 명령 세트들을 확보하실 수 있습니다.
       </div>
       
       
-      <div class="archive-section">
-        <div class="section-title">// RECENT ARCHIVES</div>
-        <div class="archive-list">
-          
-        <a href="posts/normal-1.html" class="archive-card">
-          <h3>메일 인프라 신뢰 확보를 위한 DMARC(Domain-based Message Authentication) 거부 정책 설정 시기</h3>
-          <p>새로 웜업을 진행하는 도메인의 수신율과 보안 도달 평판을 극대화하기 위해, SPF와 DKIM 인증 결과 기반의 DMARC 규약을 초기 단순 모니터링 수준에서 메일 수신 서버들이 미...</p>
-        </a>
-      
-
-        <a href="posts/normal-2.html" class="archive-card">
-          <h3>리눅스 클라우드 VPS(가상 서버) systemd-journald 메모리 힙 누수 및 로그 디스크 포화 제어 기법</h3>
-          <p>한정된 자원으로 초경량 고성능 웹 서버를 운영할 때, 실시간 커널 로그가 무제한 적재되어 디스크 공간 부족으로 전체 프로세스가 락되는 파멸적 재앙을 미연에 방지하기 위해 `/etc...</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="archive-card">
-          <h3>TCP 윈도우 스케일링(Window Scaling) 활성화 시 노후화된 게이트웨이 장비의 패킷 드롭 원인 추적</h3>
-          <p>원거리 대용량 데이터 전송 성능을 극대화하는 TCP 윈도우 스케일 팩터 옵션을 커널 수준에서 적용했을 때, 도중에 위치한 오래된 하드웨어 방화벽들이 이를 비정상 버스트 트래픽으로 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="archive-card">
-          <h3>네트워크 인프라 엔지니어를 위한 화곡 셔츠룸 트러블슈팅 기술 리포트</h3>
-          <p>표준 네트워크 통신 규약의 미세 튜닝과 메모리 힙 리소스를 정밀 제어하며 대량 서버 도달 평판의 균형점을 맞추어나가는 지적인 인프라 전문가분들이라면, 머리 아픈 커널 최적화 점검을...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="archive-card">
-          <h3>네트워크 인프라 엔지니어를 위한 화곡 셔츠룸 트러블슈팅 기술 리포트</h3>
-          <p>표준 네트워크 통신 규약의 미세 튜닝과 메모리 힙 리소스를 정밀 제어하며 대량 서버 도달 평판의 균형점을 맞추어나가는 지적인 인프라 전문가분들이라면, 머리 아픈 커널 최적화 점검을...</p>
-        </a>
-      
-        </div>
-      </div>
     </main>
     <footer>
       <div>&copy; 2026 STREET.KR. ALL RIGHTS RESERVED.</div>
       <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
+        <a href="../sitemap.xml">SITEMAP</a> | 
         <a href="#">PRIVACY</a> | 
         <a href="#">DISCLAIMER</a>
       </div>
